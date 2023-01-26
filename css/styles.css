@@ -9,12 +9,14 @@
     --primary-text-color: #434455;
     --title-text-color: #2E2F42;
     --accent-color: #4D5AE5;
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #F4F4FD;
+    --footer-text-color: #E7E9FC;
+    --button-hover-color: #404BBF;
 }
 body{
-    background-color: #fff;
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
-    font-weight: 400;
     letter-spacing: 0.02em;
 } 
 .logo{
@@ -25,6 +27,8 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+
+    color: var(--accent-color);
 }
 .logo-web{
     color: var(--accent-color);
@@ -34,26 +38,27 @@ body{
 }
 .list{
     list-style: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
 }
 
 /* Site nav */
-.site-nav a{
+
+.site-nav-link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
     color: var(--title-text-color);
     text-decoration: none;
 }
-.site-nav .link:hover,
-.site-nav .link:focus{
+.site-nav-link:hover,
+.site-nav-link:focus{
     color: var(--accent-color);
 }
-.site-nav .link.current{
+.site-nav-link.current{
     color: var(--accent-color);
 }
 .section-title{
     color: var(--title-text-color);
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -62,12 +67,11 @@ body{
 .auth-nav-link{
     color: var(--primary-text-color);
     font-style: normal;
-    font-weight: 400;
     text-decoration: none;
 }
 .auth-nav-link:hover,
 .auth-nav-link:focus{
-    color: #4D5AE5;
+    color: var(--accent-color);
 }
 /* Стили для index.html */
 /* Hero */
@@ -75,28 +79,26 @@ body{
     background-color: var(--title-text-color);
 }
 .hero-title{
-    color: #FFFFFF;
-    font-weight: 700;
+    color: var(--primary-background-color);
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
 }
 /* Button */
 .button{
-    color: #FFFFFF;
+    color: var(--primary-background-color);
     background-color: var(--accent-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    align-items: center;
     letter-spacing: 0.04em;
 
     cursor: pointer;
 }
 .button:hover,
 .button:focus{
-    background-color: #404BBF;
+    background-color: var(--button-hover-color);
 }
 /* Advantages */
 .advantage-list .title,
@@ -111,13 +113,12 @@ body{
 .team-list .text,
 .footer-text,
 .portfolio-text{
-    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.5;
 }
 /* Our team */
 .team{
-    background-color: #F4F4FD;
+    background-color: var(--secondary-background-color);
 }
 .team-list-title{
     color: var(--title-text-color);
@@ -127,16 +128,16 @@ body{
     background-color: var(--title-text-color);
 }
 .footer .logo-studio{
-    color: #F4F4FD;
+    color: var(--secondary-background-color);
 }
 .footer-text{
-    color: #E7E9FC;
+    color: var(--footer-text-color);
 }
 
 /* Стили для portfolio.html */
 .portfolio-button{
     color: var(--accent-color);
-    background-color: #F4F4FD;
+    background-color: var(--secondary-background-color);
 
     font-family: inherit;
     font-weight: 500;
@@ -148,8 +149,8 @@ body{
 }
 .portfolio-button:hover,
 .portfolio-button:focus{
-    color: #FFFFFF;
-    background-color: #404BBF;
+    color: var(--primary-background-color);
+    background-color: var(--button-hover-color);
 }
 .portfolio-link{
     text-decoration: none;
